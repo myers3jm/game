@@ -6,4 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED 20)
 add_compile_options(-Wall -Wextra -Werror -Wpointer-arith)
 add_compile_options(-Os) # Optimize for size
 add_executable(game main.cpp)
-target_include_directories(game PUBLIC "${PROJECT_BINARY_DIR}")s
+target_include_directories(game PUBLIC "${PROJECT_BINARY_DIR}")
+find_package(SDL2 REQUIRED)
+include_directories(${SDL2_INCLUDE_DIRS})
+target_link_libraries(game ${SDL2_LIBRARIES})

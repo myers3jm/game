@@ -5,6 +5,6 @@
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    std::cout << "Welcome to my game!\n";
     return 0;
 }
