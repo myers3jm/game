@@ -3,8 +3,17 @@
 #include <vector>
 #include <SDL2/SDL.h>
 
+#include "Game.h"
+
+
 int main()
 {
-    std::cout << "Welcome to my game!\n";
+    Game game;
+    bool success = game.Initialize();
+    if (success)
+    {
+        game.RunLoop();
+    }
+    game.Shutdown();
     return 0;
 }
