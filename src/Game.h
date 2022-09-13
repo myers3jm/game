@@ -1,5 +1,9 @@
+#ifdef _WIN32
 #include <SDL.h>
 #undef main // Necessary
+#else
+#include <SDL2/SDL.h>
+#endif
 
 class Game
 {
