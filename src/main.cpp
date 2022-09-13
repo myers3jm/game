@@ -1,12 +1,11 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
-#include <SDL2/SDL.h>
 
 #include "Game.h"
 
 
-int main()
+int main(int argc, char** argv)
 {
     Game game;
     bool success = game.Initialize();
