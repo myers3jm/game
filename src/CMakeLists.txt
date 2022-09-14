@@ -6,10 +6,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED 20)
 
 set(SOURCES main.cpp
     Game.cpp)
-add_executable(game ${SOURCES})
+add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_include_directories(game PUBLIC ${PROJECT_BINARY_DIR})
-set_target_properties(game PROPERTIES LINKER_LANGUAGE CXX)
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
+set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
 
 if (UNIX)
     find_package(SDL2 REQUIRED)
