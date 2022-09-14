@@ -2,9 +2,6 @@
 #include <fstream>
 #include <vector>
 #include <SDL2/SDL.h>
-#ifdef _WIN32
-#undef main // Necessary
-#endif
 
 #include "Game.h"
 
