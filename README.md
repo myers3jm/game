@@ -1,2 +1,2 @@
 # game
-A 3D game written in C++
+The basis for a cross-platform game written in C++ for Windows, Linux, and MacOS
