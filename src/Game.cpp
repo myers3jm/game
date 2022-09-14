@@ -16,7 +16,7 @@ bool Game::Initialize()
 
     // Create window
     mWindow = SDL_CreateWindow(
-        "Moo", // Title
+        "Game", // Title
         100, // Top left x-coord
         100, // Top left y-coord
         1024, // Width
@@ -89,8 +89,8 @@ void Game::GenerateOutput()
     // Clear back buffer
     SDL_SetRenderDrawColor(
         mRenderer,
-        0,      // R
-        0,      // G
+        255,      // R
+        255,      // G
         255,    // B
         255     // A
     );
